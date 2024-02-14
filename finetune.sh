@@ -1,6 +1,6 @@
 #!/bin/bash
             
-data_path="data/finetune.json"
+data_path="finetune.json"
 output_path="medalpaca-13b"
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port=2023 medalpaca/train.py \
