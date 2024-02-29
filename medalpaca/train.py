@@ -281,7 +281,7 @@ def main(
 
     trainer.train()
     
-    # model.save_pretrained(output_dir)
+    model.save_pretrained(output_dir)
 
 if __name__ == "__main__":
     fire.Fire(main)
